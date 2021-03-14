@@ -16,9 +16,12 @@ def cal_money(money,price):
 #600원 이상 넣었을 시에는 수량으 물어봄
 #돈이 뷰족하면 돈만 줌
 #커피 0 이면 기계 꺼짐
+#2021.3.14
+#커피 개수보다 더 많이 주문 했을때 안된다는걸 나타내는 기능 
+#맨 처음에 관리자가 커피를 넣어보는기능 추가...
 
+coffee= int(input("넣을 커피개수:"))
 
-coffee =10
 while True:
     money = int(input("\n잔여 커피: %d개 \n커피는 300원 입니다. \n돈을 넣어주세요: " %coffee))
     if money == 300:
@@ -33,12 +36,15 @@ while True:
             print("커피가 나옵니다")
             coffee = coffee-number
         elif money > (number*300) :
-            print("커피가 나옵니다. \n거스름돈은 %d원입니다." %(money-number*300))
-            coffee = coffee-number
+            if number > coffee:
+                print("수량이 부족합니다. 지금 뽑을 수 있는 최대 수량은 %d 입니다. 다시 주문해주세요" %coffee)
+            else:
+                print("커피가 나옵니다. \n거스름돈은 %d원입니다." %(money-number*300))
+                coffee = coffee-number
         elif money < (number*300) :
             print("돈이 부족합니다. \n돈을 반환합니다. %d원" %money)
             coffee = coffee-number
-        
+                
     elif money<300:
         print("돈이 부족합니다. \n돈을 반환합니다. %d" %money)
 
