@@ -48,6 +48,6 @@ while True:
     elif money<300:
         print("돈이 부족합니다. \n돈을 반환합니다. %d" %money)
 
-    if coffee<0:
+    if coffee<=0:
         print("기계를 중단합니다.")
         break
