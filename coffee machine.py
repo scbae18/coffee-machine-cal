@@ -1,15 +1,3 @@
-# 결제 푸쉬 문자
-def cal_money(money,price):
-    a=money-price
-    if money>=price:
-        print("결제가 완료 되었습니다. \n현재 남은 금액:%d" %a)
-    else:
-        print("잔액이 부족합니다.")
-        
-
-
-   
-
 # 돈을 넣는다.
 #돈이 맞으면 커피 1개 줄고 커피 1개 줌
 #돈이 많으면 거스름돈과 커피 줌
