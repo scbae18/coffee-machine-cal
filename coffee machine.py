@@ -22,7 +22,7 @@ def cal_money(money,price):
 
 #20210318
 #자판기 종류 추가하기
-#새로운 브랜치 테스트
+#새로운 브랜치 테스트*****
 
 
 coffee= int(input("넣을 커피개수:"))
