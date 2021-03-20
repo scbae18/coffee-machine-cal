@@ -19,7 +19,7 @@ coffee = int(input("커피 개수="))
 while True:
     money = int(input("\n잔여콜라:%d\n잔여 사이다:%d\n잔여 커피:%d\n[coke]콜라(1200원)\n[cider]사이다(1000원)\n[coffee]커피(1500원)\n돈을 넣어주세요: " %(coke ,cider ,coffee) ))
     
-    drink = str(input("[coke]콜라(1200원)\n[cider]사이다(1000원)\n[coffee]커피(1500원)\n먹을 음료를 골라주세요:"))
+    drink = str(input("먹을 음료를 골라주세요:"))
     
     if drink=='coke':
         if money == 1200:
